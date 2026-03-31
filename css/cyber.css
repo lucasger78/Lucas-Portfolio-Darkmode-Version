@@ -1,0 +1,397 @@
+/* ==========================================================================
+   CYBER THEME (Overrides style.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap');
+
+/* GLOBAL DARK THEME & GRID BACKGROUND */
+body {
+    background-color: #03060a !important;
+    background-image: 
+      linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px) !important;
+    background-size: 40px 40px !important;
+    color: #a0aab2 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif !important;
+    color: #e6f0fa !important;
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace !important;
+    color: #a0aab2 !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* SECTION BACKGROUNDS OVERRIDES */
+.color-bg, .dark-bg, .light-bg {
+    background: transparent !important;
+}
+
+.hero {
+    background-color: transparent !important;
+    background-image: url('../img/header-bg5.png') !important; /* Cambiamos a PNG transparente */
+    background-position: right bottom !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    position: relative;
+    padding-top: 40px !important; /* Reducido para subir todo */
+}
+
+/* Reducimos el padding de la caja de texto para que todo suba */
+.inner {
+    padding-top: 60px !important;
+}
+
+/* Arreglo de banderas (estaban tapadas por la capa relativa del hero) */
+.flags {
+    z-index: 9999 !important;
+}
+
+/* Ocultamos la capa que oscurecía la foto, ya que ahora es transparente */
+.hero::before {
+    display: none;
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* CYBER LOGO (Replicating "LUCAS CONTI" from image) */
+.cyber-logo-lucas {
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 110px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8), 2px 2px 0px #00d4ff !important;
+    letter-spacing: -2px;
+    display: block;
+    line-height: 0.9;
+}
+
+.cyber-logo-conti {
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 110px !important;
+    font-weight: 900 !important;
+    color: #4a5568 !important; /* Dark grey from the image */
+    text-shadow: 2px 2px 0px #ff2a40 !important; /* Subtle red 3d effect */
+    letter-spacing: -2px;
+    display: block;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+/* TITLES AND SUBTITLES */
+h1.arrow, .title-black, .title-red {
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.title-red, .title-red-1 {
+    color: #00d4ff !important; /* Replacing red with cyan for the tech look */
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+}
+
+.title-black {
+    color: #ffffff !important;
+}
+
+h1.arrow span {
+    color: #00d4ff !important;
+}
+
+/* "ACCESO RESTRINGIDO" type texts */
+.cyber-subtext {
+    font-family: 'Share Tech Mono', monospace !important;
+    color: #ff2a40 !important;
+    font-size: 14px !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase;
+}
+
+/* BUTTONS AND CONTAINERS */
+.weight-outline-btn {
+    border: 1px solid #00d4ff !important;
+    color: #00d4ff !important;
+    background: rgba(0, 212, 255, 0.05) !important;
+    font-family: 'Rajdhani', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+.weight-outline-btn:hover {
+    background: #00d4ff !important;
+    color: #03060a !important;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+}
+
+/* PORTFOLIO CARDS (Grid elements) */
+.portfolio-img {
+    margin-bottom: 30px !important;
+    padding: 0 15px !important; /* Espacio separador tipo grilla flotante */
+}
+
+.portfolio-img .overlay-effect {
+    border: 2px solid #1a2c3a;
+    border-radius: 12px;
+    padding: 8px; /* Le da marco tipo tarjeta */
+    background: rgba(5, 8, 15, 0.9);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolio-img:hover .overlay-effect {
+    border: 2px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.4), inset 0 0 10px rgba(0, 212, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.portfolio-img img.grayscale {
+    border-radius: 6px; /* Para que la foto encaje en la tarjeta redondeada */
+    filter: grayscale(100%) contrast(120%);
+    transition: filter 0.4s ease;
+}
+
+.portfolio-img:hover img.grayscale {
+    filter: grayscale(0%) contrast(110%);
+}
+
+#portfolio-flters li {
+    font-family: 'Rajdhani', sans-serif;
+    color: #a0aab2;
+    border: 1px solid transparent;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+#portfolio-flters li.active, #portfolio-flters li:hover {
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    background: rgba(0, 212, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+/* SKILLS SECTION */
+.dark-box {
+    background: rgba(10, 15, 25, 0.6) !important;
+    border: 1px solid #1a2c3a !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.dark-box:hover, .dark-box:focus {
+    border: 1px solid #00d4ff !important;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3) !important;
+    transform: translateY(-5px);
+}
+
+.dark-box h2 {
+    color: #ffffff !important;
+    font-family: 'Rajdhani', sans-serif !important;
+}
+
+.dark-box h2::after {
+    border-color: #00d4ff !important;
+}
+
+.icon-wrapper img {
+    filter: grayscale(100%) brightness(150%) sepia(100%) hue-rotate(150deg) saturate(300%) !important; 
+    /* This filter makes original colored icons cyan-ish to fit the theme */
+    transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover img {
+    filter: none !important; /* Restore actual colors on hover */
+    drop-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* HEADER MENU BUTTON */
+.menu-toggle {
+    background: rgba(0, 212, 255, 0.1) !important;
+    border: 1px solid #00d4ff !important;
+    color: #00d4ff !important;
+    font-family: 'Orbitron', sans-serif !important;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+    border-radius: 4px;
+}
+
+/* A Tag general override */
+a {
+    color: #00d4ff;
+}
+a:hover {
+    color: #ff2a40;
+}
+
+/* Fix text rotations */
+.rotate {
+    color: #00d4ff !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+}
+
+/* Contact texts */
+.contact-details p a {
+    color: #a0aab2 !important;
+}
+.contact-details p a:hover {
+    color: #00d4ff !important;
+}
+
+.social-buttons .social-btn, .social-buttons .social-btn2 {
+    background: rgba(10, 15, 25, 0.6) !important;
+    border: 1px solid #1a2c3a !important;
+    color: #a0aab2 !important;
+}
+
+.social-buttons .social-btn:hover, .social-buttons .social-btn2:hover {
+    border-color: #00d4ff !important;
+    color: #00d4ff !important;
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4) !important;
+}
+
+/* FOOTER OVERRIDES */
+footer {
+    background-color: #03060a !important;
+    border-top: 1px solid #1a2c3a;
+    padding-top: 20px;
+}
+footer a, footer p, footer b {
+    color: #a0aab2 !important;
+}
+footer a:hover {
+    color: #00d4ff !important;
+}
+
+/* UP BUTTON */
+.up-btn {
+    background: rgba(0, 212, 255, 0.1) !important;
+    color: #00d4ff !important;
+    border: 1px solid #00d4ff !important;
+    transition: all 0.4s;
+}
+.up-btn:hover {
+    background: #ff2a40 !important;
+    color: #ffffff !important;
+    border-color: #ff2a40 !important;
+    box-shadow: 0 0 15px rgba(255, 42, 64, 0.5);
+}
+
+/* CUSTOM SPACER (RED BAND REPLACEMENT) */
+.spacer-cta {
+    background-color: #00d4ff !important;
+}
+
+/* HORIZONTAL NEON DIVIDER */
+.neon-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d4ff, #0066ff, transparent);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+    border: none;
+    margin: 0;
+    width: 100%;
+}
+
+/* CONSOLIDATED GLOBAL SCANNER BEAM */
+.page-scanner {
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00d4ff, #00d4ff, transparent);
+    box-shadow: 0 0 15px #00d4ff;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0.6;
+    animation: scanPage 6s linear infinite;
+}
+
+@keyframes scanPage {
+    0% { top: 0%; }
+    100% { top: 100%; }
+}
+
+/* DASHBOARD PREMIUM GALLERY (3 COLUMNS) */
+.portfolio-img {
+    margin-bottom: 30px !important;
+}
+
+.portfolio-img .overlay-effect {
+    background: rgba(8, 12, 24, 0.95) !important;
+    border: 1.5px solid rgba(0, 212, 255, 0.25) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px) !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    transition: all 0.4s ease !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+    overflow: hidden !important;
+    position: relative !important;
+    aspect-ratio: 3/4 !important;
+    max-width: 240px !important; /* MÁS CHICA SEGÚN PEDIDO */
+    width: 100% !important;
+}
+
+.portfolio-img:hover .overlay-effect {
+    border-color: #00d4ff !important;
+    box-shadow: 0 0 40px rgba(0, 212, 255, 0.4) !important;
+}
+
+.portfolio-img .img, .portfolio-img .img a {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.portfolio-img .img img {
+    width: 100% !important; /* Anulamos el 100%+90px del tema original */
+    height: 100% !important;
+    object-fit: cover !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    transform: none !important; /* Anulamos el translate3d(-40px,0,0) del tema original */
+    -webkit-transform: none !important;
+}
+
+.portfolio-img:hover .img img {
+    transform: none !important;
+    -webkit-transform: none !important;
+}
+
+.portfolio-img img.grayscale {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* LLENAR TODO EL ESPACIO */
+    filter: brightness(0.8) grayscale(100%) !important;
+    transition: all 0.5s ease !important;
+}
+
+.portfolio-img:hover img.grayscale {
+    filter: brightness(1.1) grayscale(0%) !important;
+}
+
+/* LIMPIAR EL RESTO */
+.portfolio-img .overlay-effect::before {
+    display: none !important;
+}
+
+#portfolio-gallery-container {
+    padding-top: 40px !important;
+    padding-bottom: 60px !important;
+}

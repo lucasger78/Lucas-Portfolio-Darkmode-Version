@@ -1,0 +1,45 @@
+{
+    "nav": {
+      "home": "HOME",
+      "about-me": "ABOUT ME",
+      "skills-and-tools": "SKILLS AND TOOLS",
+      "portfolio": "PORTFOLIO",
+      "contact": "CONTACT"
+    },
+    "Perfil": {    
+      "profile-funcion": "FullStack Developer, FullStack Developer, Python (Django | Flask), Python (Django | Flask)"
+      
+    },
+
+    "Botones":{
+        "boton-portfolio": "Portfolio",
+        "boton": "See More",
+        "boton-descargar-cv": "Download CV"
+    },
+    
+    "Secciones": {
+        "about-me": "A little <span>about</span> me",
+
+        "about-me-contenido": "<p style=\"font-size: large;\">I am a <strong>Full Stack Developer</strong> specialized in <strong>modern web design and development</strong>. I focus on helping companies that want to <strong>go digital</strong>, renew their <strong>online presence</strong>, or create custom websites that drive their growth.<br><br>My main stack combines powerful and up-to-date technologies:<br>• Frontend → HTML, CSS, JavaScript and React<br>• Backend → Python with Django or Flask<br><br>I create <strong>custom websites</strong> that not only stand out for their attractive and responsive design, but also communicate clearly, improve user experience, and are ready to <strong>scale</strong> as your business grows.<br><br>With over <strong>15 years of experience</strong> in advertising, copywriting, and digital marketing, I bring a unique strategic vision to web development. I don't see websites as simple static pages, but as <strong>communication and strategy platforms</strong> that turn visitors into customers.<br><br>I work <strong>independently (freelance)</strong> with companies of all sizes in Argentina and Latin America, especially on collaborative projects where I can contribute from both the technical and creative sides. I'm always open to new challenges: from complete website renovations to joining visionary teams to develop innovative solutions.<br><br>If you're looking for a <strong>Full Stack web developer </strong> with a results-oriented approach, contact me to take your digital project to the next level!</p>",   
+         
+        "tiutlo-herramientas" : "Skills and Tools:",
+        "titulo-projects": "Recent",
+        "titulo-projects-1": "Projects",
+        "titulo-contact": "Let’s",
+        "titulo-contact-1": "work",
+        "menu-projects": "All",
+
+        "contact-footer": "<p style=\"font-size: 16px; color: #8c9398; font-family: 'Open Sans',sans-serif; font-weight: 400;\">FullStack Developer. Remote projects across Latin America and world.</p>"
+
+    },
+
+    "Vue-text": {
+      "vue-text": "Coming Soon"
+    }
+    
+  }
+
+
+  
+
+  

@@ -1,0 +1,40 @@
+{
+    "nav": {
+      "home": "INÍCIO",
+      "about-me": "SOBRE MIM",
+      "skills-and-tools": "HABILIDADES E FERRAMENTAS",
+      "portfolio": "PORTFÓLIO",
+      "contact": "CONTATO"
+    },
+    "Perfil": {      
+      "profile-funcion": "Desenvolvedor FullStack, Desenvolvedor FullStack, Python (Django | Flask), Python (Django | Flask)"
+    },
+
+    "Botones": {
+        "boton-portfolio": "Portfólio",
+        "boton": "Ver Mais",
+        "boton-descargar-cv": "Baixar CV"
+    },
+    
+    "Secciones": {
+        "about-me": "Um pouco <span>sobre</span> mim",
+
+        "about-me-contenido": "<p style=\"font-size: large;\">Sou <strong>desenvolvedor Full Stack</strong> especializado em <strong>design e desenvolvimento web moderno</strong>. Meu foco é ajudar empresas que buscam <strong>se digitalizar</strong>, renovar sua <strong>presença online</strong> ou criar sites sob medida que impulsionam seu crescimento.<br><br>Meu stack principal combina tecnologias potentes e atuais:<br>• Frontend → HTML, CSS, JavaScript e React<br>• Backend → Python com Django ou Flask<br><br>Crio <strong>sites personalizados</strong> que não só se destacam pelo design atraente e responsivo, mas também comunicam de forma clara, melhoram a experiência do usuário e estão preparados para <strong>escalar</strong> conforme seu negócio cresce.<br><br>Com mais de <strong>15 anos de experiência</strong> em publicidade, copywriting e marketing digital, trago uma visão estratégica única para o desenvolvimento web. Não vejo as páginas como simples sites estáticos, mas como <strong>plataformas de comunicação e estratégia</strong> que convertem visitantes em clientes.<br><br>Trabalho de forma <strong>independente (freelance)</strong> com empresas de todos os tamanhos na Argentina e América Latina, especialmente em projetos colaborativos onde posso contribuir tanto no aspecto técnico quanto criativo. Estou sempre aberto a novos desafios: desde renovações completas de sites até me integrar a equipes com visão para desenvolver soluções inovadoras.<br><br>Se você procura um <strong>desenvolvedor web Full Stack</strong> com foco em resultados, entre em contato para levar seu projeto digital ao próximo nível!</p>",
+
+        "tiutlo-herramientas": "Habilidades e Ferramentas",
+        "titulo-projects": "Projectos",
+        "titulo-projects-1": "Recentes",
+        "titulo-contact": "Vamos",
+        "titulo-contact-1": "trabalhar juntos",
+        "menu-projects": "Todos",
+
+        "contact-footer": "<p style=\"font-size: 16px; color: #8c9398; font-family: 'Open Sans',sans-serif; font-weight: 400;\">Desenvolvedor FullStack. Projetos remotos para toda a América Latina e o mundo.</p>"
+    },
+
+    "Vue-text": {
+      "vue-text": "Em Breve"
+    }
+    
+    
+  }
+  

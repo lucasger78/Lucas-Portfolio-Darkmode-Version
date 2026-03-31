@@ -1,0 +1,37 @@
+{
+    "nav": {
+      "home": "INICIO",
+      "about-me": "SOBRE MÍ",
+      "skills-and-tools": "HABILIDADES & HERRAMIENTAS",
+      "portfolio": "PORTFOLIO",
+      "contact": "CONTACTO"
+    },
+    "Perfil": {    
+      "profile-funcion": "FullStack Developer, FullStack Developer, Python (Django | Flask), Python (Django | Flask)"      
+    },
+
+    "Botones": {
+        "boton-portfolio": "Portfolio",       
+        "boton": "Ver Más",
+        "boton-descargar-cv": "Descargar CV"
+    },
+
+    "Secciones": {
+        "about-me": "Un poco <span>sobre</span> mí",
+
+        "about-me-contenido": "<p style=\"font-size: large;\">Soy <strong>desarrollador Full Stack</strong> especializado en <strong>diseño y desarrollo web moderno</strong> en Argentina. Me enfoco en ayudar a empresas que buscan <strong>digitalizarse</strong>, renovar su <strong>presencia online</strong> o crear sitios web a medida que impulsan su crecimiento.<br><br>Mi stack principal combina tecnologías potentes y actuales:<br>• Frontend → HTML, CSS, JavaScript y React<br>• Backend → Python con Django o Flask<br><br>Creo <strong>sitios web personalizados</strong> que no solo destacan por su diseño atractivo y responsive, sino que comunican de forma clara, mejoran la experiencia del usuario y están preparados para <strong>escalar</strong> a medida que tu negocio crece.<br><br>Con más de <strong>15 años de experiencia</strong> en publicidad, copywriting y marketing digital, aporto una visión estratégica única al desarrollo web. No veo las páginas como simples sitios estáticos, sino como <strong>plataformas de comunicación y estrategia</strong> que convierten visitantes en clientes.<br><br>Trabajo de forma <strong>independiente (freelance)</strong> con empresas de todos los tamaños en Argentina y Latinoamérica, especialmente en proyectos colaborativos donde puedo contribuir desde lo técnico y lo creativo. Estoy siempre abierto a nuevos desafíos: desde renovaciones web completas hasta integrarme en equipos con visión para desarrollar soluciones innovadoras.<br><br>Si buscas un <strong>desarrollador web Full Stack en Argentina</strong> con enfoque en resultados, ¡contáctame para llevar tu proyecto digital al siguiente nivel!</p>",
+ 
+        "tiutlo-herramientas": "Habilidades & Herramientas",
+        "titulo-projects": "Proyectos",
+        "titulo-projects-1": "Recientes",
+        "titulo-contact": "Trabajemos",
+        "titulo-contact-1": "Juntos",
+        "menu-projects": "Todos",
+
+        "contact-footer": "<p style=\"font-size: 16px; color: #8c9398; font-family: 'Open Sans',sans-serif; font-weight: 400;\">FullStack Developer. Proyectos remotos para toda Latinoamérica y el Mundo.</p>"
+    },
+
+    "Vue-text": {
+      "vue-text": "Próximamente"
+    }
+  }

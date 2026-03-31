@@ -1,0 +1,17 @@
+PORTFOLIO-LUCAS-C/
+├── index.html
+├── netlify.toml
+├── README.md
+├── BingSiteAuth.xml
+├── sitemap.xml
+├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   ├── bootstrap/
+│   ├── flexslider/
+│   ├── font-awesome/
+│   ├── lightbox/
+│   ├── smoothscroll/
+│   ├── textrotator/
+├── languages/
