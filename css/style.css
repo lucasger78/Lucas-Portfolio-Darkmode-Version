@@ -329,7 +329,7 @@ table {
 	outline:none!important;
 }
 .menu-wrap a:hover,.menu-wrap a:focus {
-	color: #E04343;
+	color: #43c1e0;
 }
 .content-wrap {
 	overflow-y:scroll;
@@ -424,7 +424,7 @@ table {
 	transform:translate3d(0,0,0);
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
-	border-bottom: 1px solid #E04343;
+	border-bottom: 1px solid #43b3e0;
 }
 .show-menu .icon-list a {
 	opacity:1;
