@@ -7,15 +7,20 @@
 /* GLOBAL DARK THEME & GRID BACKGROUND */
 body {
     background-color: #03060a !important;
-    background-image: 
-      linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px) !important;
+    background-image:
+        linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px) !important;
     background-size: 40px 40px !important;
     color: #a0aab2 !important;
     font-family: 'Share Tech Mono', monospace !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Rajdhani', sans-serif !important;
     color: #e6f0fa !important;
 }
@@ -28,18 +33,22 @@ p {
 }
 
 /* SECTION BACKGROUNDS OVERRIDES */
-.color-bg, .dark-bg, .light-bg {
+.color-bg,
+.dark-bg,
+.light-bg {
     background: transparent !important;
 }
 
 .hero {
     background-color: transparent !important;
-    background-image: url('../img/header-bg5.png') !important; /* Cambiamos a PNG transparente */
+    background-image: url('../img/header-bg5.png') !important;
+    /* Cambiamos a PNG transparente */
     background-position: right bottom !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     position: relative;
-    padding-top: 40px !important; /* Reducido para subir todo */
+    padding-top: 40px !important;
+    /* Reducido para subir todo */
 }
 
 /* Reducimos el padding de la caja de texto para que todo suba */
@@ -57,7 +66,7 @@ p {
     display: none;
 }
 
-.hero > .container {
+.hero>.container {
     position: relative;
     z-index: 1;
 }
@@ -78,8 +87,10 @@ p {
     font-family: 'Orbitron', sans-serif !important;
     font-size: 110px !important;
     font-weight: 900 !important;
-    color: #4a5568 !important; /* Dark grey from the image */
-    text-shadow: 2px 2px 0px #ff2a40 !important; /* Subtle red 3d effect */
+    color: #4a5568 !important;
+    /* Dark grey from the image */
+    text-shadow: 2px 2px 0px #ff2a40 !important;
+    /* Subtle red 3d effect */
     letter-spacing: -2px;
     display: block;
     line-height: 0.9;
@@ -87,12 +98,16 @@ p {
 }
 
 /* TITLES AND SUBTITLES */
-h1.arrow, .title-black, .title-red {
+h1.arrow,
+.title-black,
+.title-red {
     font-family: 'Orbitron', sans-serif !important;
 }
 
-.title-red, .title-red-1 {
-    color: #00d4ff !important; /* Replacing red with cyan for the tech look */
+.title-red,
+.title-red-1 {
+    color: #00d4ff !important;
+    /* Replacing red with cyan for the tech look */
     text-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
 }
 
@@ -135,13 +150,15 @@ h1.arrow span {
 /* PORTFOLIO CARDS (Grid elements) */
 .portfolio-img {
     margin-bottom: 30px !important;
-    padding: 0 15px !important; /* Espacio separador tipo grilla flotante */
+    padding: 0 15px !important;
+    /* Espacio separador tipo grilla flotante */
 }
 
 .portfolio-img .overlay-effect {
     border: 2px solid #1a2c3a;
     border-radius: 12px;
-    padding: 8px; /* Le da marco tipo tarjeta */
+    padding: 8px;
+    /* Le da marco tipo tarjeta */
     background: rgba(5, 8, 15, 0.9);
     transition: all 0.3s ease;
     overflow: hidden;
@@ -154,7 +171,8 @@ h1.arrow span {
 }
 
 .portfolio-img img.grayscale {
-    border-radius: 6px; /* Para que la foto encaje en la tarjeta redondeada */
+    border-radius: 6px;
+    /* Para que la foto encaje en la tarjeta redondeada */
     filter: grayscale(100%) contrast(120%);
     transition: filter 0.4s ease;
 }
@@ -172,7 +190,8 @@ h1.arrow span {
     transition: all 0.3s;
 }
 
-#portfolio-flters li.active, #portfolio-flters li:hover {
+#portfolio-flters li.active,
+#portfolio-flters li:hover {
     color: #00d4ff;
     border: 1px solid #00d4ff;
     background: rgba(0, 212, 255, 0.05);
@@ -188,7 +207,8 @@ h1.arrow span {
     transition: all 0.3s ease;
 }
 
-.dark-box:hover, .dark-box:focus {
+.dark-box:hover,
+.dark-box:focus {
     border: 1px solid #00d4ff !important;
     box-shadow: 0 0 15px rgba(0, 212, 255, 0.3) !important;
     transform: translateY(-5px);
@@ -204,14 +224,15 @@ h1.arrow span {
 }
 
 .icon-wrapper img {
-    filter: grayscale(100%) brightness(150%) sepia(100%) hue-rotate(150deg) saturate(300%) !important; 
+    filter: grayscale(100%) brightness(150%) sepia(100%) hue-rotate(150deg) saturate(300%) !important;
     /* This filter makes original colored icons cyan-ish to fit the theme */
     transition: all 0.3s ease;
 }
 
 .icon-wrapper:hover img {
-    filter: none !important; /* Restore actual colors on hover */
-    drop-shadow: 0 0 10px rgba(255,255,255,0.5);
+    filter: none !important;
+    /* Restore actual colors on hover */
+    drop-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* HEADER MENU BUTTON */
@@ -228,6 +249,7 @@ h1.arrow span {
 a {
     color: #00d4ff;
 }
+
 a:hover {
     color: #ff2a40;
 }
@@ -243,17 +265,20 @@ a:hover {
 .contact-details p a {
     color: #a0aab2 !important;
 }
+
 .contact-details p a:hover {
     color: #00d4ff !important;
 }
 
-.social-buttons .social-btn, .social-buttons .social-btn2 {
+.social-buttons .social-btn,
+.social-buttons .social-btn2 {
     background: rgba(10, 15, 25, 0.6) !important;
     border: 1px solid #1a2c3a !important;
     color: #a0aab2 !important;
 }
 
-.social-buttons .social-btn:hover, .social-buttons .social-btn2:hover {
+.social-buttons .social-btn:hover,
+.social-buttons .social-btn2:hover {
     border-color: #00d4ff !important;
     color: #00d4ff !important;
     box-shadow: 0 0 10px rgba(0, 212, 255, 0.4) !important;
@@ -265,9 +290,13 @@ footer {
     border-top: 1px solid #1a2c3a;
     padding-top: 20px;
 }
-footer a, footer p, footer b {
+
+footer a,
+footer p,
+footer b {
     color: #a0aab2 !important;
 }
+
 footer a:hover {
     color: #00d4ff !important;
 }
@@ -279,6 +308,7 @@ footer a:hover {
     border: 1px solid #00d4ff !important;
     transition: all 0.4s;
 }
+
 .up-btn:hover {
     background: #ff2a40 !important;
     color: #ffffff !important;
@@ -310,15 +340,20 @@ footer a:hover {
     height: 1px;
     background: linear-gradient(90deg, transparent, #00d4ff, #00d4ff, transparent);
     box-shadow: 0 0 15px #00d4ff;
-    z-index: 10000;
+    z-index: 100;
     pointer-events: none;
-    opacity: 0.6;
-    animation: scanPage 6s linear infinite;
+    opacity: 0.3;
+    animation: scanPage 9s linear infinite;
 }
 
 @keyframes scanPage {
-    0% { top: 0%; }
-    100% { top: 100%; }
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 100%;
+    }
 }
 
 /* DASHBOARD PREMIUM GALLERY (3 COLUMNS) */
@@ -338,7 +373,8 @@ footer a:hover {
     overflow: hidden !important;
     position: relative !important;
     aspect-ratio: 3/4 !important;
-    max-width: 240px !important; /* MÁS CHICA SEGÚN PEDIDO */
+    max-width: 240px !important;
+    /* MÁS CHICA SEGÚN PEDIDO */
     width: 100% !important;
 }
 
@@ -347,7 +383,8 @@ footer a:hover {
     box-shadow: 0 0 40px rgba(0, 212, 255, 0.4) !important;
 }
 
-.portfolio-img .img, .portfolio-img .img a {
+.portfolio-img .img,
+.portfolio-img .img a {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -359,13 +396,15 @@ footer a:hover {
 }
 
 .portfolio-img .img img {
-    width: 100% !important; /* Anulamos el 100%+90px del tema original */
+    width: 100% !important;
+    /* Anulamos el 100%+90px del tema original */
     height: 100% !important;
     object-fit: cover !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
-    transform: none !important; /* Anulamos el translate3d(-40px,0,0) del tema original */
+    transform: none !important;
+    /* Anulamos el translate3d(-40px,0,0) del tema original */
     -webkit-transform: none !important;
 }
 
@@ -377,7 +416,8 @@ footer a:hover {
 .portfolio-img img.grayscale {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important; /* LLENAR TODO EL ESPACIO */
+    object-fit: cover !important;
+    /* LLENAR TODO EL ESPACIO */
     filter: brightness(0.8) grayscale(100%) !important;
     transition: all 0.5s ease !important;
 }
