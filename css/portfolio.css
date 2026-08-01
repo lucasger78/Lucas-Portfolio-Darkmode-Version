@@ -1,60 +1,294 @@
 /*--------------------------------------------------------------
-# Portfolio Extras
+# Portfolio — Nueva Galería Estilo Evolution × Cyber Theme
 --------------------------------------------------------------*/
 
-.portfolio-img {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+/* ===== CONTAINER CENTRAL ===== */
+#portfolio-gallery-container {
+    padding: 40px 20px 60px !important;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block !important;
 }
 
+/* ===== GRID 3 COLUMNAS ===== */
+.portfolio-grid-new {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+/* ===== CARD OUTER wrapper ===== */
+.pcard-outer {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1;
+    transform: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    perspective: 900px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Override del .portfolio-img de style.css que puede meter margin/padding extraños */
+.portfolio-grid-new .portfolio-img {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    width: 100% !important;
+}
+
+/* ===== SCROLL ENTRY ANIMATION (solo después de que JS la activa) ===== */
+.pcard-outer.card-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.pcard-outer.card-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* ===== CARD PRINCIPAL ===== */
+.pcard {
+    display: flex !important;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background: rgba(5, 10, 20, 0.92);
+    border-radius: 14px;
+    border: 1.5px solid rgba(0, 212, 255, 0.18);
+    cursor: default;
+    will-change: transform;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+    transition: box-shadow 0.45s ease, border-color 0.35s ease;
+    height: 100%;
+}
+.pcard:hover {
+    border-color: rgba(0, 212, 255, 0.75);
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.7),
+        0 0 30px rgba(0,212,255,0.25),
+        inset 0 0 20px rgba(0,212,255,0.04);
+}
+
+/* ===== SPOTLIGHT OVERLAY ===== */
+.pcard-spotlight {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: background 0.05s ease;
+}
+
+/* ===== BORDE ANIMADO NEON ===== */
+.pcard-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    pointer-events: none;
+    z-index: 4;
+    box-shadow: 0 0 0 0px rgba(0,212,255,0);
+    transition: box-shadow 0.4s ease;
+}
+.pcard:hover .pcard-border {
+    box-shadow:
+        0 0 0 1.5px rgba(0,212,255,0.85),
+        0 0 22px rgba(0,212,255,0.3),
+        inset 0 0 18px rgba(0,212,255,0.05);
+}
+
+/* ===== IMAGEN ===== */
+.pcard-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #03060a;
+    flex-shrink: 0;
+}
+
+/* Override del img transform del style.css original */
+.pcard-img-wrap img,
+.pcard-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    filter: grayscale(80%) brightness(0.8) !important;
+    transform: scale(1) !important;
+    transition:
+        transform 0.55s cubic-bezier(0.4,0,0.2,1),
+        filter 0.55s ease !important;
+    position: static !important;
+}
+.pcard:hover .pcard-img {
+    transform: scale(1.06) !important;
+    filter: grayscale(0%) brightness(1.05) !important;
+}
+
+/* Placeholder inicial */
+.pcard-img-placeholder {
+    display: none;
+    position: absolute;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(3,6,10,0.95));
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: rgba(0,212,255,0.25);
+}
+
+/* Overlay "Ver proyecto" */
+.pcard-overlay-link {
+    position: absolute;
+    inset: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0);
+    transition: background 0.35s ease;
+    z-index: 2;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+.pcard:hover .pcard-overlay-link {
+    background: rgba(0,0,0,0.45);
+}
+
+.pcard-overlay-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.55rem 1.2rem;
+    background: rgba(0,212,255,0.85);
+    border-radius: 99px;
+    color: #03060a;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(12px) scale(0.93);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.pcard:hover .pcard-overlay-inner {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* ===== CARD BODY ===== */
+.pcard-body {
+    padding: 1.3rem 1.4rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.pcard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.pcard-title {
+    font-family: 'Rajdhani', sans-serif !important;
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #e6f0fa !important;
+    line-height: 1.3;
+    margin: 0 !important;
+    text-shadow: 0 0 8px rgba(0,212,255,0.25);
+}
+
+.pcard-icon-link {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    background: rgba(0,212,255,0.07);
+    border: 1px solid rgba(0,212,255,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,212,255,0.75) !important;
+    transition: all 0.25s ease;
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+.pcard-icon-link:hover {
+    background: rgba(0,212,255,0.18);
+    border-color: rgba(0,212,255,0.7);
+    color: #00d4ff !important;
+    box-shadow: 0 0 10px rgba(0,212,255,0.3);
+}
+.pcard-icon-link svg,
+.pcard-overlay-inner svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.pcard-desc {
+    color: #a0aab2 !important;
+    font-family: 'Share Tech Mono', monospace !important;
+    font-size: 0.78rem !important;
+    line-height: 1.65 !important;
+    flex: 1;
+}
+
+.pcard-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: 0.15rem;
+}
+.pcard-tag {
+    padding: 0.18rem 0.65rem;
+    border-radius: 99px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: rgba(0,212,255,0.08);
+    color: #00d4ff !important;
+    border: 1px solid rgba(0,212,255,0.28);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ===== FILTROS — compatibilidad con portfolio.js ===== */
 .portfolio-img.hide {
-  opacity: 0;
-  transform: scale(0);
+    opacity: 0 !important;
+    transform: scale(0.85) translateY(-20px) !important;
+    pointer-events: none;
 }
 
-.menu-portfolio {
-  display: flex !important;
-  justify-content: center !important;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .portfolio-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-
-.portfolio-img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;  
+@media (max-width: 600px) {
+    .portfolio-grid-new {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    #portfolio-gallery-container {
+        padding: 30px 15px 40px !important;
+    }
 }
-
-.overlay-effect .img img {
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover;
-}
-
-.effects .img img {
-  width: 100%;
-  height: 100% !important;
-  object-fit: cover;
-  
-}
-
-.overlay-effect .overlay a.expand {
-  margin: 0 auto 0 auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

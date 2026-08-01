@@ -1,45 +1,59 @@
 {
-    "nav": {
-      "home": "HOME",
-      "about-me": "ABOUT ME",
-      "skills-and-tools": "SKILLS AND TOOLS",
-      "portfolio": "PORTFOLIO",
-      "contact": "CONTACT"
-    },
-    "Perfil": {    
-      "profile-funcion": "FullStack Developer, FullStack Developer, Python (Django | Flask), Python (Django | Flask)"
-      
-    },
-
-    "Botones":{
-        "boton-portfolio": "Portfolio",
-        "boton": "See More",
-        "boton-descargar-cv": "Download CV"
-    },
-    
-    "Secciones": {
-        "about-me": "A little <span>about</span> me",
-
-        "about-me-contenido": "<p style=\"font-size: large;\">I am a <strong>Full Stack Developer</strong> specialized in <strong>modern web design and development</strong>. I focus on helping companies that want to <strong>go digital</strong>, renew their <strong>online presence</strong>, or create custom websites that drive their growth.<br><br>My main stack combines powerful and up-to-date technologies:<br>• Frontend → HTML, CSS, JavaScript and React<br>• Backend → Python with Django or Flask<br><br>I create <strong>custom websites</strong> that not only stand out for their attractive and responsive design, but also communicate clearly, improve user experience, and are ready to <strong>scale</strong> as your business grows.<br><br>With over <strong>15 years of experience</strong> in advertising, copywriting, and digital marketing, I bring a unique strategic vision to web development. I don't see websites as simple static pages, but as <strong>communication and strategy platforms</strong> that turn visitors into customers.<br><br>I work <strong>independently (freelance)</strong> with companies of all sizes in Argentina and Latin America, especially on collaborative projects where I can contribute from both the technical and creative sides. I'm always open to new challenges: from complete website renovations to joining visionary teams to develop innovative solutions.<br><br>If you're looking for a <strong>Full Stack web developer </strong> with a results-oriented approach, contact me to take your digital project to the next level!</p>",   
-         
-        "tiutlo-herramientas" : "Skills and Tools:",
-        "titulo-projects": "Recent",
-        "titulo-projects-1": "Projects",
-        "titulo-contact": "Let’s",
-        "titulo-contact-1": "work",
-        "menu-projects": "All",
-
-        "contact-footer": "<p style=\"font-size: 16px; color: #8c9398; font-family: 'Open Sans',sans-serif; font-weight: 400;\">FullStack Developer. Remote projects across Latin America and world.</p>"
-
-    },
-
-    "Vue-text": {
-      "vue-text": "Coming Soon"
-    }
-    
+  "nav": {
+    "home": "HOME",
+    "about-me": "ABOUT ME",
+    "skills-and-tools": "SKILLS AND TOOLS",
+    "portfolio": "PORTFOLIO",
+    "contact": "CONTACT"
+  },
+  "Perfil": {
+    "profile-funcion": "FullStack Developer, FullStack Developer, Python (Django | Flask), Python (Django | Flask)"
+  },
+  "Botones": {
+    "boton-portfolio": "Portfolio",
+    "boton": "See More",
+    "boton-descargar-cv": "Download CV",
+    "boton-ver-proyecto": "View Project"
+  },
+  "Secciones": {
+    "about-me": "A little <span>about</span> me",
+    "about-me-contenido": "<p style=\"font-size: large;\">I am a <strong>Full Stack Developer</strong> specialized in <strong>modern web design and development</strong>. I focus on helping companies that want to <strong>go digital</strong>, renew their <strong>online presence</strong>, or create custom websites that drive their growth.<br><br>My main stack combines powerful and up-to-date technologies:<br>• Frontend → HTML, CSS, JavaScript and React<br>• Backend → Python with Django or Flask<br><br>I create <strong>custom websites</strong> that not only stand out for their attractive and responsive design, but also communicate clearly, improve user experience, and are ready to <strong>scale</strong> as your business grows.<br><br>With over <strong>15 years of experience</strong> in advertising, copywriting, and digital marketing, I bring a unique strategic vision to web development. I don't see websites as simple static pages, but as <strong>communication and strategy platforms</strong> that turn visitors into customers.<br><br>I work <strong>independently (freelance)</strong> with companies of all sizes in Argentina and Latin America, especially on collaborative projects where I can contribute from both the technical and creative sides. I'm always open to new challenges: from complete website renovations to joining visionary teams to develop innovative solutions.<br><br>If you're looking for a <strong>Full Stack web developer </strong> with a results-oriented approach, contact me to take your digital project to the next level!</p>",
+    "tiutlo-herramientas": "Skills and Tools:",
+    "titulo-projects": "Recent",
+    "titulo-projects-1": "Projects",
+    "titulo-contact": "Let’s",
+    "titulo-contact-1": "work",
+    "menu-projects": "All",
+    "contact-footer": "<p style=\"font-size: 16px; color: #8c9398; font-family: 'Open Sans',sans-serif; font-weight: 400;\">FullStack Developer. Remote projects across Latin America and world.</p>",
+    "menu-sistemas": "Web Systems",
+    "menu-webapp": "Web App",
+    "menu-landing": "Landing Pages",
+    "portfolio-title-1": "Ritmo Urbano App",
+    "portfolio-desc-1": "Aplicación web completa de gestión institucional desarrollada con Python y Django.",
+    "portfolio-title-2": "Backery",
+    "portfolio-desc-2": "Web system for order taking with shopping cart and admin panel.",
+    "portfolio-title-3": "Ritmo Urbano Courses",
+    "portfolio-desc-3": "Online course platform with shopping cart developed in vanilla JavaScript.",
+    "portfolio-title-4": "Sal de Campo",
+    "portfolio-desc-4": "Responsive institutional site for a food products company.",
+    "portfolio-title-5": "JasFly Geomatics",
+    "portfolio-desc-5": "Corporate web for a company specialized in geomatics, drones and aerial surveys.",
+    "portfolio-title-6": "Clinic Management System",
+    "portfolio-desc-6": "System for medical clinic with patient, doctor, medical record and appointment management.",
+    "portfolio-title-7": "Tres3D Studio",
+    "portfolio-desc-7": "Corporate web for a 3D printing and industrial design studio in Córdoba.",
+    "portfolio-title-8": "Calycon S.A.",
+    "portfolio-desc-8": "Institutional site for a skilled labor outsourcing company.",
+    "portfolio-title-9": "ITC Foreign Trade",
+    "portfolio-desc-9": "Web for ITC Group, a company specialized in foreign trade and imports.",
+    "portfolio-title-10": "MJ Reyes Portfolio",
+    "portfolio-desc-10": "Personal portfolio for a web designer. Elegant and visual design with advanced CSS.",
+    "portfolio-title-11": "Ritmo Urbano Institutional",
+    "portfolio-desc-11": "Institutional website for an urban dance academy. Dynamic and modern design.",
+    "portfolio-title-12": "AminoTech",
+    "portfolio-desc-12": "E-commerce site for sports supplements company. Catalog and shopping cart."
+  },
+  "Vue-text": {
+    "vue-text": "Coming Soon"
   }
-
-
-  
-
-  
+}

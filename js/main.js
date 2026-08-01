@@ -61,7 +61,7 @@ Menu
 
 })();
 
- // Portfolio isotope and filter
+ /* Portfolio isotope and filter (DISABLED - Replaced by vanilla JS in portfolio.js)
  var portfolioIsotope = $('.portfolio-container').isotope({
 	itemSelector: '.portfolio-item',
 	layoutMode: 'fitRows'
@@ -71,7 +71,7 @@ $('#portfolio-flters li').on('click', function () {
 	$(this).addClass('active');
 
 	portfolioIsotope.isotope({filter: $(this).data('filter')});
-});
+}); */
 
 
 	
